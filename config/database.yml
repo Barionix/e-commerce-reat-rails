@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: ecommerce_user
+  password: senha123
+  host: localhost
+  pool: 5
+
+development:
+  <<: *default
+  database: ecommerece_development
+
+test:
+  <<: *default
+  database: ecommerece_test
+
+production:
+  <<: *default
+  database: ecommerece_production
+  username: ecommerce_user
+  password: senha123
