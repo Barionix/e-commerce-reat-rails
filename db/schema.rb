@@ -10,9 +10,61 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_09_11_174607) do
+ActiveRecord::Schema[8.0].define(version: 2025_09_11_180000) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "caixas", force: :cascade do |t|
+    t.decimal "saldo_total", default: "0.0", null: false
+    t.decimal "saldo_estimado", default: "0.0", null: false
+    t.datetime "data_atualizacao", default: -> { "CURRENT_TIMESTAMP" }
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "charts", force: :cascade do |t|
+    t.string "code", null: false
+    t.string "nome"
+    t.string "chart_json"
+    t.decimal "preco", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "movimentacaos", force: :cascade do |t|
+    t.string "tipo", null: false
+    t.string "nome", null: false
+    t.string "descricao"
+    t.decimal "valor", null: false
+    t.datetime "data", default: -> { "CURRENT_TIMESTAMP" }
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "produtos", force: :cascade do |t|
+    t.string "nome", null: false
+    t.string "descricao"
+    t.decimal "preco", null: false
+    t.decimal "preco_com_desconto", default: "0.0"
+    t.string "categoria", null: false
+    t.integer "estoque", default: 0, null: false
+    t.text "img", default: [], null: false, array: true
+    t.boolean "reserva", default: false
+    t.boolean "visivel", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "sales", force: :cascade do |t|
+    t.string "code", null: false
+    t.string "nome"
+    t.string "chart"
+    t.decimal "preco", null: false
+    t.decimal "valor_final"
+    t.string "status", default: "Pending"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email"
