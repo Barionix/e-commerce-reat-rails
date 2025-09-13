@@ -4,8 +4,16 @@ Rails.application.routes.draw do
   namespace :api do 
     namespace :v1 do 
       post '/users/createAdminUser', to: "users#createAdmin"
-      resources :users do
-      end 
+      resources :users 
+
+      post '/produtos/createProduct', to: "produtos#createProduct"
+      get '/produtos/listarProdutos', to: "produtos#listProducts"
+      resources :produtos do
+        member do
+          post 'editarProduto', to: 'produtos#productUpdate'
+          get 'getProductByID', to: 'produtos#getProductByID'
+        end
+      end
     end 
   end 
   get "up" => "rails/health#show", as: :rails_health_check
