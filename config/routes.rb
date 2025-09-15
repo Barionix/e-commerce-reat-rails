@@ -3,9 +3,11 @@ Rails.application.routes.draw do
 
   namespace :api do 
     namespace :v1 do 
+      post "/auth/login", to: "auth#login"
+      resources :auth
 
       post '/sales/confirmSale', to: "sales#confirmSale"
-      resoures :sales 
+      resources :sales 
 
       post '/users/createAdminUser', to: "users#createAdmin"
       resources :users 
