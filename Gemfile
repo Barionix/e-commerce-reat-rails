@@ -8,7 +8,7 @@ gem "pg", "~> 1.1"
 gem "puma", ">= 5.0"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
-gem 'rack-cors', '~> 1.1'
+gem 'rack-cors', '~> 3.0'
 gem "jwt"
 gem "bcrypt", "~> 3.1.7"
 
