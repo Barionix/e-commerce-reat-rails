@@ -3,11 +3,23 @@ Rails.application.routes.draw do
 
   namespace :api do 
     namespace :v1 do 
+
+      post '/sales/confirmSale', to: "sales#confirmSale"
+      resoures :sales 
+
       post '/users/createAdminUser', to: "users#createAdmin"
       resources :users 
 
+      post '/sharts/publishChart', to: "sharts#publishChart"
+      resources :sharts  do 
+        member do 
+          get 'getChartByID', to: "sharts#getChartByID"
+        end 
+      end
+
       post '/produtos/createProduct', to: "produtos#createProduct"
       get '/produtos/listarProdutos', to: "produtos#listProducts"
+
       resources :produtos do
         member do
           post 'editarProduto', to: 'produtos#productUpdate'
