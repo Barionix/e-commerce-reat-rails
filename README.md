@@ -43,8 +43,8 @@ Um aplicativo web completo de catálogo e e-commerce, desenvolvido com **React**
 ### Lista de Produtos
 ![Lista de Produtos](./assets/produtos.png)
 
-### Cadastraer  Produto
-![Cadastro](./assets/detalhes_produto.png)
+### Cadastrar  Produto
+![Cadastro](./assets/cadastro.png)
 
 ### Administração / Movimentações
 ![Admin](./assets/admin.png)
