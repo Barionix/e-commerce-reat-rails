@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo: MyString
+  nome: MyString
+  descricao: MyString
+  valor: 9.99
+  data: 2025-09-16 12:37:41
+
+two:
+  tipo: MyString
+  nome: MyString
+  descricao: MyString
+  valor: 9.99
+  data: 2025-09-16 12:37:41
