@@ -5010,3 +5010,56 @@ puma (7.0.2) lib/puma/request.rb:100:in 'Puma::Request#handle_request'
 puma (7.0.2) lib/puma/server.rb:497:in 'Puma::Server#process_client'
 puma (7.0.2) lib/puma/server.rb:266:in 'block in Puma::Server#run'
 puma (7.0.2) lib/puma/thread_pool.rb:173:in 'block in Puma::ThreadPool#spawn_thread'
+Started GET "/ws" for ::1 at 2025-09-16 15:04:04 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='ECommerceReactRails'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2025-09-16 15:04:12 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/api/v1/produtos/listarProdutos" for ::1 at 2025-09-16 15:04:21 -0300
+Processing by Api::V1::ProdutosController#listProducts as HTML
+  [1m[36mProduto Load (32.7ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos" /*action='listProducts',application='ECommerceReactRails',controller='produtos'*/[0m
+  ↳ app/controllers/api/v1/produtos_controller.rb:37:in 'Api::V1::ProdutosController#listProducts'
+Completed 200 OK in 111ms (Views: 44.2ms | ActiveRecord: 41.4ms (1 query, 0 cached) | GC: 5.4ms)
+
+
+Started GET "/api/v1/produtos/listarProdutos" for ::1 at 2025-09-16 15:04:21 -0300
+Processing by Api::V1::ProdutosController#listProducts as HTML
+  [1m[36mProduto Load (1.7ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos" /*action='listProducts',application='ECommerceReactRails',controller='produtos'*/[0m
+  ↳ app/controllers/api/v1/produtos_controller.rb:37:in 'Api::V1::ProdutosController#listProducts'
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/ws" for ::1 at 2025-09-16 15:04:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/api/v1/produtos/getProductByID/3" for ::1 at 2025-09-16 15:04:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/produtos/getProductByID/3"):
+  
+Started GET "/api/v1/produtos/getProductByID/3" for ::1 at 2025-09-16 15:04:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/produtos/getProductByID/3"):
+  
+Started GET "/api/v1/produtos/listarProdutos" for ::1 at 2025-09-16 15:04:42 -0300
+Processing by Api::V1::ProdutosController#listProducts as HTML
+  [1m[36mProduto Load (0.8ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos" /*action='listProducts',application='ECommerceReactRails',controller='produtos'*/[0m
+  ↳ app/controllers/api/v1/produtos_controller.rb:37:in 'Api::V1::ProdutosController#listProducts'
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/api/v1/produtos/listarProdutos" for ::1 at 2025-09-16 15:04:42 -0300
+Processing by Api::V1::ProdutosController#listProducts as HTML
+  [1m[36mProduto Load (0.4ms)[0m  [1m[34mSELECT "produtos".* FROM "produtos" /*action='listProducts',application='ECommerceReactRails',controller='produtos'*/[0m
+  ↳ app/controllers/api/v1/produtos_controller.rb:37:in 'Api::V1::ProdutosController#listProducts'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/ws" for ::1 at 2025-09-16 15:05:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
