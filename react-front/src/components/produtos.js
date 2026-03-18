@@ -225,7 +225,7 @@ const ProdutosComFiltro = () => {
                 onClick={toggleCart}
                 style={{ fontSize: 28, marginLeft: "40%" }}
               >
-                <ShoppingCartIcon style={{ fontSize: 28, color: "red" }} />
+                <ShoppingCartIcon style={{ fontSize: 28, color: "#0C4B33" }} />
               </IconButton>
             </div>
           </div>
@@ -289,7 +289,7 @@ const ProdutosComFiltro = () => {
                           display: "block",
                           fontSize: "1.2em",
                           fontWeight: "bold",
-                          color: "red",
+                          color: "#0C4B33",
                           marginTop: "2px",
                         }}
                       >
@@ -343,7 +343,7 @@ const ProdutosComFiltro = () => {
             top: "80px",
             right: "20px",
             width: "250px",
-            boxShadow: "0 4px 12px red",
+            boxShadow: "0 4px 12px #0C4B33",
             borderRadius: "16px",
             zIndex: 1000,
             backgroundColor: "#fff",

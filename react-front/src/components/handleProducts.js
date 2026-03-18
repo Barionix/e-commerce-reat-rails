@@ -217,7 +217,7 @@ const HandleProductFilter = () => {
                 onClick={() => toggleCart()}
                 style={{ fontSize: 28, marginLeft: "40%" }}
               >
-                <ShoppingCartIcon style={{ fontSize: 28, color: "red" }} />
+                <ShoppingCartIcon style={{ fontSize: 28, color: "#0C4B33" }} />
               </IconButton>
             </div>
           </div>
@@ -286,7 +286,7 @@ const HandleProductFilter = () => {
                           display: "block",
                           fontSize: "1.2em",
                           fontWeight: "bold",
-                          color: "red",
+                          color: "#0C4B33",
                           marginTop: "2px",
                         }}
                       >

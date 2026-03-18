@@ -175,7 +175,7 @@ const Chart = () => {
                 mt: 2,
                 width: "50%",
                 alignSelf: "center",
-                backgroundColor: "red",
+                backgroundColor: "#0C4B33",
                 color: "#fff",
               }}
               className={`btn-comprar`}
@@ -188,7 +188,7 @@ const Chart = () => {
                 mt: 2,
                 width: "50%",
                 alignSelf: "center",
-                backgroundColor: "red",
+                backgroundColor: "#0C4B33",
                 color: "#fff",
               }}
               className={`btn-comprar`}

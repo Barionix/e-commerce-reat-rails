@@ -44,7 +44,7 @@ input, textarea, select {
 /* Botão de cadastrar / registrar */
 .btn-cadastrar {
   padding: 10px;
-  background-color: red;
+  background-color: #0C4B33;
   color: white;
   border: none;
   border-radius: 4px;
@@ -54,7 +54,7 @@ input, textarea, select {
 }
 
 .btn-cadastrar:hover {
-  background-color: red;
+  background-color: #0C4B33;
 }
 
 /* Inputs numéricos */

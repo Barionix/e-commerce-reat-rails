@@ -8,7 +8,6 @@ const AdminRoute = ({ children }) => {
   const user = userString ? JSON.parse(userString) : null;
 
   if (!user) {
-    // Redireciona para login se não for admin
     return <Navigate to="/login" replace />;
   }
 

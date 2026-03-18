@@ -43,7 +43,7 @@ input, textarea, select {
 /* Estilos para o botão de cadastrar */
 .btn-cadastrar {
   padding: 10px;
-  background-color: red;
+  background-color: #0C4B33;
   color: white;
   border: none;
   border-radius: 4px;
@@ -53,7 +53,7 @@ input, textarea, select {
 }
 
 .btn-cadastrar:hover {
-  background-color: red;
+  background-color: #0C4B33;
 }
 
 /* Estilos para inputs numéricos */
